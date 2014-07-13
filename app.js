@@ -186,6 +186,17 @@ console.log(total);
 //-----------------------------------------
 // do the fatorial here. ITERATIVE
 
+//Chylds factorial funciton
+//
+function factorialIter(n){
+var product = 1;
+  for(var i=2; i <= n; i++){
+    product *= i;
+    return product;
+  }
+}
+console.log("(iterative) factorial is : " + factorialIter(5) );
+
 function factorialIterative(number) {
   var sum = 1;
 
@@ -208,7 +219,7 @@ function factorialRecursive(number){
     return number * factorialRecursive(number-1);
    }
 }
-console.log("(recursive) factorial : " + factorialRecursive(5));
+console.log("(recursive) factorial : " + factorialRecursive(5) );
 
 //----------------------------------------
 //
